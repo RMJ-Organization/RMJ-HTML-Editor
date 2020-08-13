@@ -1,3 +1,4 @@
+    // Licensed under the GNU General Public License "https://github.com/RMJ-Organization/RMJ-HTML-Editor/blob/master/LICENSE"     
         const first = document.querySelector(".first");
         const iframe = document.querySelector("iframe");
         const btn = document.querySelector("button");
