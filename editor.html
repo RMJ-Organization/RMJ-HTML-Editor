@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="canonical" href="https://rmjorg.com/editor" />
+    <link rel="icon" type="image/png" href="https://static.rmjorg.com/img/code.png" />
+    <link rel="shortcut icon" type="image/png" href="https://static.rmjorg.com/img/code.png" />
+    <meta name="rating" content="General" />
+    <meta name="Description" content="The RMJ Official Website. We have all sorts of services for you to choose from. From being a Organisation to a Cloud Hosting Service." />
+    <meta name="owner" content="RMJ Corporation" />
+    <link rel="alternate" href="https://rmjorg.com/editor" hreflang="en-us" />
+    <link rel="alternate" href="https://rmjorg.com/editor" hreflang="en-nz" />
+    <link rel="alternate" href="https://rmjorg.com/editor" hreflang="zh-CN" />
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .btn {
+            position: fixed;
+            right: 0;
+            padding: 0.4rem;
+            width: 3rem;
+            background: #1155CC;
+            color: white;
+            border-width: 0;
+            font-size: 1rem;
+            outline: none;
+            cursor: pointer;
+            height: 15vh;
+        }
+
+            .btn:hover {
+                color: white;
+                background: #2165DC;
+            }
+
+
+        .main-editor {
+            background-color: white;
+            display: flex;
+            width: 100%;
+            padding: 0;
+            position: fixed;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            border: 0px solid #36383f;
+        }
+
+        .first {
+            background-color: #171717;
+            width: 50%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            white-space: pre;
+            padding: 0.4rem;
+            height: 90vh;
+            border-width: 10px;
+            border-color: black;
+            color: white;
+            font-family: "Courier New"
+        }
+
+        .second {
+            background-color: #ffffff;
+            width: 50%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            white-space: pre;
+            padding: 0.4rem;
+            height: 90vh;
+        }
+
+        div {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            padding: 0px;
+        }
+    </style>
+
+
+    <title>Online Code Editor</title>
+</head>
+<body>
+    <noframes>
+        <!-- If browser doesn't support HTML5 -->
+        <div class="nohtml5" id="nohtml5">
+          <h1 style="color: red; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Warning!</h1>
+          <p>Your browser doesn't support HTML5 ( needed ). This website is built on HTML5/XHTML1 and CSS3, if your browser doesn't support this, then please upgrade to a browser that supports HTML5.</p>
+          <p>RMJ Website does not have any HTML4 and XHTML1 Support. Please upgrade to HTML5</p>
+          <p>Options:</p>
+          <p>1. RMJ Support recommends downloading the newest version of <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Mozilla Firefox</a> or <a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a> which both have HTML5 and JavaScript Support on your computer.</p>
+          <p>2. Go to the RMJ HTML4 webpage which isn't secured with TLS or SSL and doesn't support XHTML1. <a href="http://old.rmjorg.com/html" target="_blank">( Link Coming Soon )</a></p>
+          <p>3. Go to the RMJ XHTML1 webpage which isn't secured with TLS or HTML, If your browser only supports HTML4, DO NOT USE THIS. <a href="http://old.rmjorg.com/xhtml" target="_blank">( Link Coming Soon )</a></p>
+        </div>
+      </noframes>
+      <noscript>
+        <!-- If Javascript is turned off or isn't enabled -->
+        <div class="nojs" id="nojs">
+          <h1 style="color: red; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Warning!</h1>
+          <p>Your Browser either doesn't support JavaScript or has it turned off,</p>
+          <p>Please enable it and reload in order for this website to function or go on the RMJ's no TLS or SSL<a href="http://old.rmjorg.com/js" onclick="alert('The Non Javascript Page has not been completed yet');">non-javascript website</a> built on HTML 4 & XHTML 1 with less features.</p>
+          <p>RMJ Support recommends downloading the newest version of <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Mozilla Firefox</a> or <a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a> which both have Javascript Support on your computer.</p>
+          <!-- On Complete: <p>Please enable it in order for this website to function or go on the RMJ's <a href="https://rmjorg.com/nojs">non-javascript website</a> with less features.</p>-->
+        </div>
+      </noscript>
+    <br /> 
+    <div style="text-align: center; font-family: Arial;"><h1>Online HTML Editor</h1></div>
+    <div class="main-editor">
+        <button class="btn">Run Code</button>
+        <div class="first" contenteditable id="first">&lt!DOCTYPE html&gt
+
+&lthtml&gt
+&ltbody&gt
+
+&lth1&gt Example Heading&lt/h1&gt
+
+&ltp&gt Example Paragraph&lt/p&gt
+
+&lt/body&gt
+&lt/html&gt
+
+        </div>
+        <iframe class="second">
+        </iframe>
+    </div>
+
+    <script src="https://scripts.rmjorg.com/api/editor.js"></script>
+</body>
+</html>
